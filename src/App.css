@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Anton|Dosis|Gentium+Basic|Josefin+Slab&display=swap');
+:root {
+    --survey-color: #002c6c;
+    --light-color: #f3f3f3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* utility */
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 10;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    margin: auto;
+    max-width: 1101px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-a {
+    /* border: 1px solid #002c6c; */
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.form_contain {
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 10px 10px;
+    font-family: 'Gentium Basic', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qform {
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.qform form div {
+    margin-bottom: 20px;
+    background: var(--light-color);
+}
+
+
+/* .contain {} */
+
+.survey {
+    background: var(--survey-color)! important;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    /* border-radius: 4px 4px 4px 4px; */
+}
+
+input[type="email"] {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--survey-color);
+    border-radius: 10px 10px;
+    color: #fff;
+    font-family: 'Gentium Basic', serif;
 }
